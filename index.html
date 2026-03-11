@@ -1,30 +1,30 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - CSS и JS</title>
     <link rel="stylesheet" href="style.css">
-    <title>Lab 1 - Настройка окружения</title>
 </head>
 <body>
-    <header>
-        <h1>Управление задачами (MERN Stack)</h1>
-    </header>
-    <main>
-        <section id="input-area">
+    <main class="app-container">
+        <header>
+            <h1>Управление задачами</h1>
+        </header>
+        <section id="input-area" class="input-group">
             <input type="text" id="task-name" placeholder="Наименование задачи...">
-            <button type="button">Добавить</button>
+            <button type="button" id="add-btn">Добавить</button>
         </section>
         <hr>
         <section id="list-area">
             <h2>Список текущих дел:</h2>
-            <ol>
-                <li>Установка и настройка Visual Studio Code</li>
-                <li>Инициализация репозитория Git</li>
-                <li>Настройка расширения Live Server</li>
-            </ol>
-            
+            <div id="tasks-container">
+                <p class="task-item">1. Установка и настройка Visual Studio Code</p>
+                <p class="task-item">2. Инициализация репозитория Git</p>
+                <p class="task-item">3. Настройка расширения Live Server</p>
+            </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
